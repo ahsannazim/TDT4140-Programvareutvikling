@@ -22,6 +22,22 @@ Kjør filen "Main.java" som er lokalisert i "/tdt4140.gr1878.app.ui/src/main/jav
 
 ### Bygget med
 - [Maven](https://maven.apache.org) - Dependency Management
+- Jackson - JSON library
+- HSQLDB - embedded database with SQL support
+- FX-Map-Control
+- TestFX - test framework for JavaFX apps
+- Jetty - embedded HTTP server
+
+### Brukt med: 
+
+fx-map-control (in FxMapControl folder): Fork av github
+
+tdt4140.gr1878.app.ui  (in app.ui folder): Main.java er appen.
+
+tdt4140.gr1878.web.server (in web.server folder): Web server + REST API (Ikke fullført)
+
+#For å kjøre testene: 
+mvn test og mvn integration-test for å kjøre disse. 
 
 ### Forfattere
 - Ahsan Azim
@@ -31,4 +47,7 @@ Kjør filen "Main.java" som er lokalisert i "/tdt4140.gr1878.app.ui/src/main/jav
 - Mathilde Skeide Ruth
 - Nora Strømberg Brask
 - Sigrid Eie Ledsaak
+	
+
+
 
