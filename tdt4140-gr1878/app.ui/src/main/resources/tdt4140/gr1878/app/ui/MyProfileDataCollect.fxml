@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="pane" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      
+      <HBox styleClass="hbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="profileButton" mnemonicParsing="false" onAction="#MyProfileDataCollectorController" styleClass="menuButton" text="Profile" />
+            <Button fx:id="activityButton" mnemonicParsing="false" onAction="#activityButton" styleClass="menuButton" text="Activity" />
+            <Button fx:id="trondheimButton" mnemonicParsing="false" onAction="#trondheimButton" styleClass="menuButton" text="Trondheim" />
+            <Button fx:id="totaltripsButton" mnemonicParsing="false" onAction="#totaltripsButton" styleClass="menuButton" text="Total Trips" />
+         </children>
+      </HBox>
+      
+      <VBox layoutX="14.0" layoutY="20.0" />
+      <VBox layoutX="14.0" layoutY="30.0" />
+      <VBox fx:id="vboxTech" layoutX="14.0" layoutY="40.0" />
+      
+      <Button fx:id="signOutButton" layoutX="427.0" layoutY="40.0" mnemonicParsing="false" onAction="#signOutButton" prefHeight="27.0" prefWidth="114.0" text="Sign out" />
+      
+      <Label layoutX="58.0" layoutY="30.0" styleClass="headerLabel" text="My Profile">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="191.0" text="Email" />
+      <Label layoutX="56.0" layoutY="127.0" text="Name" />
+      <Label fx:id="name" layoutX="148.0" layoutY="93.0" />
+      <Label fx:id="birthday" layoutX="148.0" layoutY="160.0" />
+      <Label fx:id="email" layoutX="148.0" layoutY="191.0" />
+      <Label fx:id="username" layoutX="145.0" layoutY="127.0" />
+      <Label fx:id="weight" layoutX="148.0" layoutY="226.0" />
+      <Label fx:id="height" layoutX="148.0" layoutY="260.0" />
+      <Button fx:id="deleteUserButton" layoutX="427.0" layoutY="88.0" mnemonicParsing="false" onAction="#deleteUserButton" prefHeight="27.0" prefWidth="114.0" text="Delete user" />
+
+   
+   </children>
+</AnchorPane>

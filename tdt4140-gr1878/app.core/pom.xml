@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>tdt4140-gr1878.app.core</artifactId>
+
+	<parent>
+		<groupId>tdt4140-gr1878</groupId>
+		<artifactId>tdt4140-gr1878</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+<!-- https://mvnrepository.com/artifact/com.github.cliftonlabs/json-simple -->
+<dependency>
+    <groupId>com.github.cliftonlabs</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>2.1.2</version>
+</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/io.jenetics/jpx -->
+		<dependency>
+			<groupId>io.jenetics</groupId>
+			<artifactId>jpx</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.e4.core.di -->
+<dependency>
+    <groupId>org.eclipse.platform</groupId>
+    <artifactId>org.eclipse.e4.core.di</artifactId>
+    <version>1.6.100</version>
+</dependency>
+
+
+		<dependency>
+			<groupId>de.grundid.opendatalab</groupId>
+			<artifactId>geojson-jackson</artifactId>
+			<version>1.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+<dependency>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-server</artifactId>
+    <version>9.4.9.v20180320</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.2</version>
+</dependency>
+		
+		<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.44</version>
+</dependency>
+</dependencies>
+	
+	
+	
+</project>

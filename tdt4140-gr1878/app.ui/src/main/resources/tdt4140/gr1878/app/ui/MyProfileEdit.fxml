@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="pane" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      		<Button fx:id="saveButton" layoutX="149.0" layoutY="369.0" mnemonicParsing="false" onAction="#saveButton" text="Save" />
+      
+      <Label layoutX="63.0" layoutY="27.0" styleClass="headerLabel" text="Edit Profile" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="237.0" text="Email" />
+      <Label layoutX="66.0" layoutY="195.0" text="Birthday" />
+      <Label layoutX="66.0" layoutY="96.0" text="Name" />
+      <Label layoutX="70.0" layoutY="282.0" text="Weight" />
+      <Label layoutX="72.0" layoutY="324.0" text="Height" />
+      <Label fx:id="name" layoutX="153.0" layoutY="96.0" />
+      <Label fx:id="birthday" layoutX="153.0" layoutY="195.0" />
+      <Label fx:id="email" layoutX="154.0" layoutY="237.0" />
+      
+      <TextField fx:id="height" layoutX="145.0" layoutY="319.0" promptText="New Height" />
+      <TextField fx:id="weight" layoutX="145.0" layoutY="277.0" promptText="New Weight" />
+      
+      <HBox styleClass="hbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="groupsButton" mnemonicParsing="false" onAction="#groupsButton" styleClass="menuButton" text="Groups" />
+            <Button fx:id="profileButton" mnemonicParsing="false" onAction="#profileButton" styleClass="menuButton" text="Profile" />
+            <Button fx:id="activityButton" mnemonicParsing="false" onAction="#activityButton" styleClass="menuButton" text="Activity" />
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsButton" styleClass="menuButton" text="Information" />
+         </children>
+      </HBox>
+      
+      		<Button fx:id="signOutButton" layoutX="461.0" layoutY="50.0" mnemonicParsing="false" onAction="#signOutButton" prefHeight="27.0" prefWidth="89.0" text="Sign out" />
+      
+      <Label fx:id="kilograms" layoutX="326.0" layoutY="282.0" text="kg" />
+      <Label fx:id="meters" layoutX="327.0" layoutY="324.0" text="cm" />
+      <Button fx:id="deleteUserButton" layoutX="461.0" layoutY="100.0" mnemonicParsing="false" onAction="#deleteUserButton" text="Delete user" />
+      <Label layoutX="64.0" layoutY="143.0" text="Username" />
+      <Label fx:id="username" layoutX="151.0" layoutY="143.0" />
+      <Button fx:id="editPasswordButton" layoutX="444.0" layoutY="147.0" mnemonicParsing="false" onAction="#editPasswordButton" text="Edit Password" />
+      <Button fx:id="editEmailButton" layoutX="471.0" layoutY="190.0" mnemonicParsing="false" onAction="#editEmailButton" text="Edit Email" />
+   </children>
+</AnchorPane>

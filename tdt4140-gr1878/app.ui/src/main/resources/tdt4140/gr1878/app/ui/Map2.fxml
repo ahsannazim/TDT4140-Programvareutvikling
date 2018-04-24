@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import fxmapcontrol.*?>
+
+<AnchorPane styleClass="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox styleClass="hbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="groupsButton" mnemonicParsing="false" onAction="#groupsButton" styleClass="menuButton" text="Groups" />
+            <Button fx:id="profileButton" mnemonicParsing="false" onAction="#profileButton" styleClass="menuButton" text="Profile" />
+            <Button fx:id="activityButton" mnemonicParsing="false" onAction="#activityButton" styleClass="menuButton" text="Activity" />
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsButton" styleClass="menuButton" text="Information" />
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="20.0" />
+      <VBox layoutX="14.0" layoutY="30.0" />
+      <VBox fx:id="vboxTech" layoutX="14.0" layoutY="40.0" />
+      
+      <BorderPane prefHeight="496.0" prefWidth="571.0">
+    <center>
+		<Map fx:id="mapView" center="58.97,5.7" maxZoomLevel="15">
+		</Map>
+        <fxmapcontrol.Map fx:id="map" center="58.97,5.7" maxZoomLevel="20" onMousePressed="#handlePressed" >
+                       <MapGraticule fx:id="mapGraticule" />
+            
+            <MapNode fx:id="StartNode">
+               <Label text=" Start " style="-fx-background-color: white;" translateY="-20" />
+            </MapNode>
+             <MapNode fx:id="Node1">
+               <Label text="  " style="-fx-background-color: transparent;" translateY="-20" />
+            </MapNode>
+             <MapNode fx:id="Node2">
+               <Label text="  " style="-fx-background-color: transparent;" translateY="-20" />
+            </MapNode>
+            <MapNode fx:id="EndNode">
+                <Label text=" End " style="-fx-background-color: white;" translateY="-20" />
+            </MapNode>
+        </fxmapcontrol.Map>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <BorderPane.margin>
+                <Insets left="5" right="5" top="5" bottom="5" />
+            </BorderPane.margin>
+            <Label text="Zoom" />
+            <Slider fx:id="zoomSlider" min="1" max="20" value="4"/>
+            <ComboBox fx:id="mapLayerComboBox">
+                <items> 
+                    <FXCollections fx:factory="observableArrayList"> 
+                        <String fx:value="OpenStreetMap" /> 
+                        <String fx:value="OpenStreetMap WMS" /> 
+                    </FXCollections> 
+                </items> 
+            </ComboBox>
+           
+        </HBox>
+    </bottom>
+</BorderPane>
+   </children>
+</AnchorPane>

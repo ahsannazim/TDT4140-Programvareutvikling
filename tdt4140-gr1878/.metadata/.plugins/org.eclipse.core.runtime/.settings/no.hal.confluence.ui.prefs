@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+wikiPathPreference_library_.jar=ovinger/libs
+wikiPathPreference_source_.java_\#java=ovinger/src
+wikiPathPreference_tests_Test.java_\#java_\#test=ovinger/tests

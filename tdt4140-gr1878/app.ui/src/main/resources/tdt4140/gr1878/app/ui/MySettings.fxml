@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="pane" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox styleClass="hbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="groupsButton" mnemonicParsing="false" onAction="#groupsButton" styleClass="menuButton" text="Groups" />
+            <Button fx:id="profileButton" mnemonicParsing="false" onAction="#profileButton" styleClass="menuButton" text="Profile" />
+            <Button fx:id="activityButton" mnemonicParsing="false" onAction="#activityButton" styleClass="menuButton" text="Activity" />
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsButton" styleClass="menuButton" text="Information" />
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="20.0" />
+      <VBox layoutX="14.0" layoutY="30.0" />
+      <VBox fx:id="vboxTech" layoutX="14.0" layoutY="40.0" />
+      <Label layoutX="55.0" layoutY="40.0" styleClass="headerLabel" text="Information">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="129.0" prefHeight="41.0" prefWidth="537.0" text="This application was created by students for a course called Software Development." textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="149.0" prefHeight="41.0" prefWidth="537.0" text="Various software was used to create this application such as; Eclipse, Scene Builder, etc." textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="169.0" prefHeight="41.0" prefWidth="537.0" text="The purpose for this application is to motivate users to bike and run more often which would" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="190.0" prefHeight="41.0" prefWidth="537.0" text="in-turn encourage a healthier lifestyle and help the data collectors such as Statens Vegvesen" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="211.0" prefHeight="41.0" prefWidth="537.0" text="to develop popular routes and infrustructure. This information would be obtained through the" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="232.0" prefHeight="41.0" prefWidth="537.0" text=" backend services of this application and the user of this application can decide if they want" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="253.0" prefHeight="41.0" prefWidth="537.0" text="to share this information so they can maintain their freedom of privacy." textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

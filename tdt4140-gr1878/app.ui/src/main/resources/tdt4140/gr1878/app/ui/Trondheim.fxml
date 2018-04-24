@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="paneView" prefHeight="538.0" prefWidth="571.0" style="-fx-background-color: #cce6ff#cce6ff #cce6ff#cce6ff #cce6ff#cce6ff #cce6ff#cce6ff #cce6ff#cce6ff #cce6ff#cce6ff #cce6ff#cce6ff #cce6ff#cce6ff;" styleClass="pane" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BarChart fx:id="people" layoutX="40.0" layoutY="48.0" title="Total Amount of People in the Area">
+         <xAxis>
+            <CategoryAxis label="Area" side="BOTTOM" fx:id="x" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="y" label="Amount Of People" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Button fx:id="goBack" mnemonicParsing="false" onAction="#goBack" styleClass="backButton" text="Go Back" />
+      <HBox styleClass="hbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="profileButton" mnemonicParsing="false" onAction="#MyProfileDataCollectorController" styleClass="menuButton" text="Profile" />
+            <Button fx:id="activityButton" mnemonicParsing="false" onAction="#activityButton" styleClass="menuButton" text="Activity" />
+            <Button fx:id="trondheimButton" mnemonicParsing="false" onAction="#trondheimButton" styleClass="menuButton" text="Trondheim" />
+            <Button fx:id="totaltripsButton" mnemonicParsing="false" onAction="#totaltripsButton" styleClass="menuButton" text="Total Trips" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
