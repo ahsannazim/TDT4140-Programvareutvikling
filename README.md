@@ -6,7 +6,7 @@ Hensikten med prosjektet er å lære om og få praktisk erfaring med metoder, te
 Vi har bestemt oss for å utvikle en applikasjon som motiverer for fysisk aktivitet blant en gruppe mennesker. Det er mulig å logge seg på som datainnsamler og vanlig bruker. Som datainnsamler får man se relevant data om hvor folk løper og sykler i form av diagrammer. Vi ønsker å framstille hvor mange som er i aktivitet i hvilke områder av Trondheim by, samt i hele Stavanger og Oslo. Som bruker vil aktiviteten din, om ønskelig, i form av sykling eller løping registreres. Hver bruker samler poeng til gruppene de er medlem av, og en gruppeside vil vise hvor langt gruppen har igjen for å nå et mål.
 
 ### Wiki
-I vår [Wiki](https://maven.apache.org) finner du referat fra planleggingsmøter, scrummøter og scenariotester fra sprint 1, 2 og 3. Vår utfyllende testplan er også å finne der.
+I vår Wiki finner du referat fra planleggingsmøter, scrummøter og scenariotester fra sprint 1, 2 og 3. Vår utfyllende testplan er også å finne der.
 
 ### Hvordan sette opp utviklingsmiljø
 For å sette opp utviklingsmiljøet starter du med å clone git repoet.
